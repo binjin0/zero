@@ -1,0 +1,25 @@
+/*
+상속제어하기
+2. inherit : 무조건 상속을 받으라고 지정하고 싶을 때 사용
+3. unset 
+-부모로부터 상속받을 값이 있을 때 : inherit
+-부모로부터 상속받을 값이 없을 때 : initial
+*/
+div {
+  border: 1px solid gray;
+  margin: 2px;
+}
+.child1 {
+  color: red;
+}
+.parent1,
+.parent2 {
+  color: blue;
+}
+
+/* .parent2 * (parent2클래스 아래있는 요소는 모두)  {
+  color: inherit;
+} */
+.parent2 .child1 {
+  all: unset;
+}

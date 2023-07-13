@@ -1,0 +1,24 @@
+/* first-child(형제가 기준) VS first-of-type(태그가 기준!) 
+형제들 중 첫번째   타입(=태그이름)들중에 첫번째(그런데 선택된 태그들의 종류가 다를때 각 태그마다 첫번째 요소가 선택된다.)
+->대부분은 후자를 사용하는 것이 깔끔하다. 하지만 first-of-type의 괄호내용때문에 주의해야하는 경우가 생긴다.
+ex)
+<div class="movie">a</div>
+<p class="movie">b</div>
+------------------------------
+.movie:first-of-type{
+color:red
+------------------------------
+-> div와 p태그 둘다 선택되어 a와b모두 빨간색 글씨로...
+}*/
+/* 1.fist-of-type */
+p:first-of-type {
+  color: red;
+}
+/* 2.last-of-type */
+p:last-of-type {
+  color: blue;
+}
+/* nth-of-type() */
+p:nth-of-type(even) {
+  color: yellow;
+}

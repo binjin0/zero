@@ -1,0 +1,20 @@
+/*
+Selector Combinators 선택자 결합
+
+하위
+자식
+형제 선택자
+그룹화
+*/
+/*<하위 선택자 결합> 
+형식 : 선택자 스페이스 선택자
+ul li:last-of-type {
+  color: red;
+} */
+
+/*<자식 선택자 결합>
+형식 : 선택자 > 선택자
+*/
+#List > li:last-of-type {
+  color: red;
+}

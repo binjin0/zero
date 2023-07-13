@@ -1,0 +1,19 @@
+/*Type Selector
+하나의 웹 페이지에서 일관성있게 적용해야하는 스타일이 있을때 사용한다.
+따라서 타입 셀렉터는 css 상단부에 많이 적용된다.*/
+h2 {
+  color: purple;
+}
+/*ID Selector
+모든 태그에서 사용할 수 ㅣㅇㅆ느 속성을 전역 속성이라하는데 id가 그렇다. id태그는 쉽게 생각하며 ㄴ이름표라고 생각하면된다. 이 아이를 콕 집어서 불를 수 있는 이름표를 만들기 위해 사용한다. 
+id는 유일하고 유니크한 이름으로 지어야한다. */
+#welcome-title {
+  color: red;
+}
+/*Class Selector*/
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}

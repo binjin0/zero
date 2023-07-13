@@ -1,0 +1,33 @@
+/*
+hover :마우스를 올렸을때
+active : 마우스 down일때(클릭하고 있을때)
+
+hober와 active의 순서가중요
+active의사 클래스로 정의한 스타일은 자신보다 뒤에 위치하고 동등한 명시성으 가진 링크 의사 클래스(link,hover,visited)가 덮어쓴다.
+따라서 LVHA순서(link-visited-hover-active)로 작성하는 것이 좋다.
+즉 웬만해서는 acrive는 마지막에 위치해주는 것이 좋다.
+focus : tqp을 눌렀을때 요소들 사이를 왔다갔다할때, 어떤 특정 요소를 클릭했을때 focussing돼어 스타일이 적용된다.
+
+
+*/
+input[type="button"] {
+  background-color: skyblue;
+  border: none;
+}
+
+input[type="button"]:hover {
+  background-color: teal;
+  color: white;
+}
+
+input[type="button"]:active {
+  background-color: red;
+}
+
+input[type="button"]:focus {
+  background-color: blue;
+}
+
+input[type="text"]:focus {
+  background-color: antiquewhite;
+}

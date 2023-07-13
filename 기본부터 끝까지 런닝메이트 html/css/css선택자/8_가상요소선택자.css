@@ -1,0 +1,27 @@
+/*
+first-letter
+각 텍스트 콘텐츠의 첫번째 글자에만 적용하고 싶은 스타일이 있을 때 사용
+first-line
+각 텐스트 콘텐츠의 첫번째 줄에만 적용하고 싶은 스타일이 있을 때 사용
+selection
+선택영역에 대한 스타일을 적용하고 싶을 때 사용(드래그)
+*/
+
+.lorem::first-letter {
+  color: red;
+  font-size: 30px;
+}
+.lorem::before {
+  content: "BEFORE";
+}
+.lorem::first-line {
+  color: red;
+}
+.lorem::-moz-selection {
+  background-color: yellow;
+  color: wheat;
+}
+.lorem::selection {
+  background-color: yellow;
+  color: wheat;
+}

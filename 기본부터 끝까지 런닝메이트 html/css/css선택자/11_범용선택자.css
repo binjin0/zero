@@ -1,0 +1,14 @@
+/*
+범용선택자(Universal selector)
+-> *
+전체를 선택할 때 사용
+*/
+
+div > * {
+  color: red;
+}
+/*
+원래는 선택자 사용할때 앞에 *이생략된거임!! 
+*.red {
+  color: yellow;
+} */

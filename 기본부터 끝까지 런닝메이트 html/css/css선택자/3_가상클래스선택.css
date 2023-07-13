@@ -1,0 +1,16 @@
+/*
+
+:not()
+-괄호 안에 사용할 수 있는 것 -> selector(선택자)
+-뜻 : 괄호안에 있는 것만 제외하고 선택
+*/
+
+/* 경우1. 클래스 
+input:not(.pw) {
+  background-color: indianred;
+} */
+
+/*경우2. 속성 attribute*/
+input:not([type="email"]) {
+  background-color: indianred;
+}
