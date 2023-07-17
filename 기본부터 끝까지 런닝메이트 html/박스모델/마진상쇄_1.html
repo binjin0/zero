@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마진상쇄-인접형제</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+
+        margin: 20px; /*이렇게 마진을 주면 첫번째 box의 bottom과 두번째 box top이 겹쳐져서 결국에 40px이 아니라 20px만큼밖에 공간이 있다.
+        나머지 box도 다 이렇게 마진상쇄가 나타난다.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>
