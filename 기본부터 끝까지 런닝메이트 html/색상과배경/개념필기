@@ -1,0 +1,60 @@
+1. 색상 표현
+-키워드사용
+-RGB 3차원 좌표계사용(#+16진수표기법 또는 rgb(),rgba()의함수형 표기법)
+rgba에서 a는 투명도
+-HSL실린더형 좌표계싸용 (hsl(),hsla()의함수형 표기법)
+
+2.opacity
+요소의 불투명도를 설정
+기본값 1
+0,0.0~1.0,0%~100% 값으로 나타낼 수 있음( 값이 커질수록 불투명해짐)
+
+background-color: rgba(100,100,100,0.5)와 opacity 차이점
+rgba의 a는 투명도를 나타내는데 이는 박스 배경색에만 해당될뿐 그안에 요소내용(ex 글씨)에는 영향을 주지 않는다.
+반면 opacity는 요소내용을 포함해 모든 곳에 영향을 준다. 그러나 자식요소가 상속되지는 않는다.
+
+3. background-color, background-image
+background-color
+: 배경색을 지정. color표현 모두 사용가능
+background-image
+background-color 보다 위에 표현됨
+기본값 : none
+
+4. background-repeat
+배경 이미지의 반복 방법을 지정. 가로축 및 세로축을 따라 반복할 수 있고 아예반복하지 않을 수도 있디.
+
+속성값 종류
+repeat : 가로,세로축 모두 반복
+repeat-x : x축(가로)으로 반복
+repeat-y : y축(세로)으로 반복
+no-repeat : 반복 x
+
+5. background-position
+background 이미지의 위치 변경 가능
+좌표를 이용하여 가능.
+키워드를 이용하여 가능 .  top,center,lefr,right,bottom
+
+6. background-origin
+배경의 원점을 테두리 시작점(border). 테두리 내부, 안쪽 여백 내부(padding) 중 하나로 지정한다. 즉 배경의 원점을 변경하는 속성이다.
+즉 속성값 종류가
+border-box
+paddint-box
+content-box
+위와 같이 3개가 있다
+
+7. background-size
+배경 이미지의 크기를 설정
+속성깂 종류
+-키워드 사용
+auto : 기본값. 배경이미지의 원본 크기
+contain : 가로와 세로 중  이미지에 맞게 선택되어 한쪽에만 맞게 맞춰준다. 이미지가 찌그러지지 않는 한에서 
+cover : 이미지가 찌그러지지 않는 한도내에 제일 크게 설정. 즉 이미지의 크기는 요소의 크기에 맞춰서 딱맞게 설정된다.
+- 단위(px,em, rem,% 등..)로 사용
+이미지가 찌그러질 수 있음...
+
+
+8. background(shorthand)
+색상,이미지,원점,크기,반복 등 여러 배경 스타일을 한번에 지정한다.
+
+보통 스페이싱으로 구분을 하는데 /로 구분해야하는 속성들이 있음
+-> background-position 뒤에 background-size가 올경우
