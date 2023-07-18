@@ -1,0 +1,34 @@
+1. transition 개요
+a상태가 b상태로 어느정도 시간이 흐른후 변화되는 모습을 보여주는 것
+
+2. transition-property, transtition-duration
+transition-property
+:none ->아무것도 바꾸지 않겠다.
+:all ->갖고있는 모든 css를 바꾸겠다.
+:margin-right -> 이런 식으로 쓰면 특정 css만 바꿀수 있다.
+
+transition-duration
+얼마만큼의 시간을 가지고 바꿀것인가를 설정하는 속성
+
+3. transition-delay, transition-timing-function
+transition-delay
+지정한 시간 후에 css가 변함
+사용활용 예 : 요소가 여러개 있을 때 1s,2s,3s,,,각각 주면 차례대로 변화되는 효과를 줄 수 있다.
+
+transition-timing-function
+요소의 중간과정 변화의 속도를 조절할 수 있다.
+ease
+ease-in
+ease-out
+ease-in-out
+linear
+cubic-bezier
+4. transition(shorthand)
+propterty, duration,delay,timingfunction
+한줄로 작성하는 것이 더 좋다. 
+
+*순서 중요
+-> delay와 duration이 모두 시간을 나타내기때문에 한줄로 나타냈을 때 헷갈릴 수 있음
+시간과 관련된 값이 한개밖에 없다면 무조건 duration으로 동작하고 2개가 있다면 앞쪽이 duration, 뒤쪽이 delay로 동작한다.
+
+5. transition+transform 활용 예

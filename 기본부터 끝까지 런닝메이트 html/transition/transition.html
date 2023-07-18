@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 80px;
+        border: 2px dashed teal;
+        background-color: thistle;
+        font-size: 50px;
+
+        /*이곳에 transition을 작성하면 마우스를 올렸을때랑 내렸을때 모두 css가변경된다.*/
+        transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+
+        /*한줄로 나타내기 -> trasition: all 2s linear 1s*/
+      }
+      .box:hover {
+        width: 320px;
+        background-color: indianred;
+        height: 400px;
+        /*이곳에 transition을 넣었을 때는 마우스 올렸을 때만 css가 변경되는 것을 확인할 수 있다.
+        transition-property: background-color;
+        transition-duration: 2s;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hover Me!</div>
+  </body>
+</html>
