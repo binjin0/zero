@@ -1,0 +1,86 @@
+1. display - inline,block,inline-block
+블럭 요소를 inline,inline-block요소로 바꿀 수 있다.
+인라인 요소를 block,inline-block요소로 바꿀 수 있다.
+inline 요소 : ex span
+- 영역의 크기가 내부 콘텐츠 크기로 정해진다.
+- margin,padding의 top/bottom은 추가할 수 없다.(즉 좌우 여백을 추가가능하지만 상하여백은 추가 불가능)
+- 여러 요소가 가로 배치가 된다.
+block 요소 : ex div
+- 영역의 크기를 width, height로 지정할 수 있다.
+- width를 지정하지 않으면 가로 전체를 차지한다.
+- 여러 요소가 세로 배치가 된다.
+inline-block : ex input
+- 영역의 크기를 width,height 지정할 수 있다.
+- 여러 요소가 가로 배치가 된다.
+
+2. 요소를 없애는 방법 - display none, visivility hidden
+-display none
+코드상에는 존재하지만 우리 눈에는 보이지 않음. 레이아웃 자체에서 없애버림. 아예 그리지 않아버림 
+-visivility hidden
+코드, 레이아웃 존재하지만 우리 눈에는 보이지 않는다.
+
+3. float
+요소를 붕붕 뜨게 만든다. 한 요소가 보통 흐름(normal flow)으로부터 벗어나 텍스트 및 인라인 요소가 그 주위를 감싸는 자기 컨테이너의
+좌우측을 따라 배치되게 한다.
+
+flex가 등장하기 전에는 레이아웃을 구성할 때 많이 사용했지만 요즘은 많이 사용하지 않음
+
+left던 right던지 모두 자신의 부모 영역 내에서 갈수있는 가장 끝까지만 갈 수 있다.
+->예제코드 참고
+
+4-1. position-Normal Flow?
+Normal Flow?
+일반 대열, 요소의 레이아웃을 변경하지 않을 시 웹페이지 요소가 자기 자신을 배치하는 방법
+기본적으로 웹페이지가 어떻게 배치되는지는 위에서 많이 배웠죠?(ex block, inline, inline-block...)
+
+종류: static, relative,absoulute,fixed,sticky
+
+position-static
+:기본값.즉 Normal Flow대로 배치되는 것을 말함
+top,bottom, left, right 프로퍼티(속성)를 사용할 수 없음
+
+4-2. position-relative
+요소를 일반적인 문서 흐름(normal-flow)에 따라 배치하고 자기 자신을 기준(static일때, normal-flow일때)으로 top, right, bottom, left의 값에 따라 적용한다.
+top,bottom,right,left 프로퍼티 사용가능
+주의할점은 top, bottom나 right, left를 동시에 선언했을 시 top,left만 우선시되어 적용되고 나머지 하나는 적용되지 않음
+
+4-3. position-absoulute
+요소를 일반적인 문서 흐름에서 제거학. 페이지 레이아웃에 공간도 배정하지 않는다. 대신 position이 static이 아닌 가장 가까운 위치의 조상 요소를 찾아 상대적으로 배치한다. 단 조상 중 지정 요소가 없다면 초기 컨테이닝 블록을 기준으로 삼는다.
+top,bottom,right,left 프로퍼티 사용가능
+z-index의 값이 auto가 아니라면 새로운 쌓임 맥락을 생성한다. 절대 위치 지정 요소의 바깥 여백은 서로 상쇄되지 않는다.
+
+
+4-4. position-fixed
+요소를 일반적인 문서 흐름에서 제거하고 페이지 레이아웃에 공간도 배정하지 않는다. 대신 뷰포트의 컨테이닝 블록을 기준으로 삼아 배치한다.
+transform, perspevtive, filter 속성 중 하나라도 none이 아니라면 뷰포트 대신 그 조상을 컨테이닝 블록으로 삼는다.
+
+붕떠있는 버튼이나 스크롤해도 항상 보이는 nav를 만들 때 사용된다.
+
+4-5. position - sticky
+요소를 일반적인 문서 흐름에 따라 배치하고 테이블 관련 요소를 포함해 가장 까운 스크롤되는 조상과 표 관련 요소를 포함한 컨테이닝 블록(가장 가까운 블록 레벨 조상)을 기준으로 적용한다.
+
+fixed와 차이점?
+fixed는 어느 위치든 둥둥 떠있는 반면 sticky는 자신이 있던 위치부터 둥둥뜨게된다.
+-> 코드 참고
+
+5. overflow
+컨테이너의 width, height가 설정되어 있네 내부의 콘텐츠가 넘칠때 어떻게 할지 설정하는 속성
+
+속성값 종류
+visible : 기본값. 콘텐츠 내용이 넘쳐도 그냥 그대로 보임.
+hidden : 넘쳐 흐르는 부분이 짤려서 보이지 않음
+scroll : 스크롤을 생성하여 넘쳐흐르는 부분을 처리한다.
+outo : 브라우저가 자동으로 어떤 값을 선택할지 선택한다. 콘텐츠가 넘치지 않는다면 자동으로 visible을 선택하고 넘친다면 scroll을 선택한다.
+
+6. z-index
+z축의 순서를 지정하는 속성
+z축?
+x축 가로 y축 세로 z축은 대각선? 이라고 생각하면 된다.
+z축은 쌓임을 설정해준다.
+
+속성값 종류
+outo=0
+정수
+
+기본적인 쌓임 순서 : 기본적으로 position이 설정되지 않는다면 순서대로 쌓이고, position이 설정된다면 position-static이 아닌 애들이 static인 요소보다 앞에 위치한다.
+이런 기본적인 쌓임 순서를 바꾸고 싶을 때 z-index를 사용하면 된다. 
