@@ -1,0 +1,56 @@
+1.애니메이션 개요
+유저가 액션하지 않아도 시간이 지나면 요소가 변화한다.
+2.@keyframes
+애니메이션 중간중간의 특정 지점들을 거칠 수 있는 키 프레임 설정함
+
+3. animation-name, animation-duration
+animation-name
+: keyframes의 이름
+- 기본값 : none
+- 이름규칙
+대소문자 구분
+a~z, 0~9 ,_,- 만 사용가능
+
+animation-duration
+: 몇초동안 걸쳐서 애니메이션을 작동시킬 것인가를 설정
+- 속성값 time 자료형 사용가능 -> s,ms
+- 음수x 0이상의 양수 시간을 작성해야함
+
+4. animation-delay, animation-timing-funtion
+animation-delay
+애니메이션 시작 후 한 사이클을 지속하는 시간을 설정
+음수값 사용 가능 -> 애니메이션이 바로 시작되지만 중간부터 시작된다.
+
+animation-timing-function
+5. animation-iteration-count, animation-direction
+animation-iteration-count
+:반복횟수 설정
+기본값 : 1
+
+- 속성값 종류
+숫자
+infinite
+
+animation-direction
+: 애니메이션의 방향 설정
+- 속성값 종류
+normal 정방향
+reverce 역방향
+alternate 정방향 시작.왔다갔다 반복
+alternate-reverce : 역방향으로 시작.왔다갔다 반복
+
+6. animation-play-state
+- 속성값 종류
+running : 기본값.애니메이션 계속재생
+paused : 애니메이션 일시정지
+ex 마우스 올리면 일시정지 이런식으로 css넣을 수 있음
+
+7. animation-fill-mode
+애니메이션이 실행 전과후에 대상에 스타일을 적용하는 방법을 설정
+- 속성값 종류
+none : 애니메이션은 실행되지 않을 때 대상에 스타일을 적용하지 않는다. 즉 실행할 때만 keyframes를 갖다써라
+forwards : 실행된 애니메이션의 마지막 keyframe에 값을 유지해라
+backwards : 첫번째 keyframe에 정의 된 값을 적용하고 animation-delay기간동안 이 값을 유지한다.
+both : forwards와 backwards 둘다 적용
+
+8. animation(shorthand)

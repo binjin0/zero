@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 10px solid khaki;
+        background-color: rgb(204, 253, 225);
+        border-radius: 30px;
+        animation: my-first-animation 1s infinite;
+      }
+      .box1 {
+        background-color: aquamarine;
+        animation-delay: 0;
+      }
+      .box2 {
+        background-color: pink;
+        animation-delay: 0.3s;
+      }
+      .box3 {
+        background-color: skyblue;
+        animation-delay: 0.6s;
+      }
+      @keyframes my-first-animation {
+        0% {
+          font-size: 20px;
+        }
+        50% {
+          width: 200px;
+          font-size: 30px;
+        }
+        100% {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">안농</div>
+    <div class="box2">안농</div>
+    <div class="box3">안농</div>
+  </body>
+</html>
