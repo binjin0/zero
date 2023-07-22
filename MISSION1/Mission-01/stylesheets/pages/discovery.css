@@ -1,2 +1,149 @@
 /* CSS 작성 */
 /*오늘의 발견*/
+body {
+  margin: 0 auto;
+  width: 1080px;
+}
+header img {
+  width: 176px;
+  height: 40px;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+section {
+  width: 1020px;
+  height: 1010px;
+}
+#title {
+  margin-top: 8px;
+}
+h2,
+h3 {
+  float: left;
+}
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  text-align: center;
+  color: #181818;
+  margin-right: 0 5px 0 0;
+}
+h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  color: var(--color-gray-600);
+  margin: 23px 0 0 5px;
+}
+#menu {
+  position: relative;
+  width: 1020px;
+  height: 958px;
+}
+div {
+  float: left;
+}
+.product {
+  border: 1px solid var(--color-gray-500);
+}
+.first-block div {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+}
+
+.honey {
+  margin: 24px 8px 8px 0;
+}
+.vaseline {
+  margin: 24px 0 8px 8px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.first-block button {
+  position: absolute;
+  top: 270px;
+}
+/* button:hover::after {
+  display: inline-flex;
+  padding: 12px 18px 13px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  content: "구매하기";
+  background-color: var(--color-blue-600);
+} */
+
+.second-block div {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px;
+}
+.second-block button {
+  position: absolute;
+  top: 600px;
+}
+.handcream {
+  margin: 8px 8px 8px 0;
+}
+.bibs {
+  margin: 8px;
+}
+
+.hanssem {
+  margin: 8px;
+}
+
+.dumpling {
+  margin: 8px 0 8px 8px;
+}
+
+.third-block button {
+  position: absolute;
+  top: 920px;
+}
+.wettissue {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+  margin: 8px 8px 0 0;
+}
+.febreze {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px;
+  margin: 8px;
+}
+.dyson {
+  width: 243px;
+  height: 310px;
+  padding: 14px 22px;
+  margin: 8px 0 0 8px;
+}
+button:hover {
+  width: 112px;
+  height: 42;
+  background-color: var(--color-blue-600);
+}
+button:focus {
+  width: 112px;
+  height: 42;
+  background-color: var(--color-blue-600);
+}
+.product:hover {
+  border: 1px solid var(--color-blue-600);
+}
+.product:focus {
+  border: 1px solid var(--color-blue-600);
+}
