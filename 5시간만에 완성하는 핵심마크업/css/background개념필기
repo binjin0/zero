@@ -1,0 +1,11 @@
+background-color : 배경색
+background-image : 배경이미지
+- 값 작성방법 : url("이미지 주소")
+background-repeat : 배경 이미지 반복 여부
+-no-repeat : 반복 x
+-repeat : 반복o
+-repeat-x : 가로반복
+-reqeat-y : 세로반복
+
+bacground-position : 배경 이미지의 위치 지정
+기본 키워드 : top,bottom,left, right,center
