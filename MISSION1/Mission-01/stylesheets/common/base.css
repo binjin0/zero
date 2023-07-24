@@ -3,3 +3,15 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
 }
+body {
+  margin: 0 auto;
+  width: 1080px;
+}
+header img {
+  width: 176px;
+  height: 40px;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}

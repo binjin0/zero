@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .button-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .hover-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: none;
+      }
+
+      .button-container:hover .hover-button {
+        display: block;
+      }
+
+      .main-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* 추가된 스타일 */
+      .hover-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 마우스 올릴 때 버튼 스타일 변경 */
+      .button-container:hover .main-button {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="main-button">구매하기</button>
+      <div class="hover-button">구매하기</div>
+    </div>
+  </body>
+</html>
