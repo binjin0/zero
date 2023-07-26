@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./10_마진상쇄.css" />
+    <style>
+      h1 {
+        margin: 0px;
+      }
+      p {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    마진 겹침, margin collapsing
+    마진끼리 겹쳤을때 상쇄되는 현상
+    둘 중 큰 값을 따라감
+    시각적인 효과가 끼어있다면 마진상쇄 일어나지 않음.
+  -->
+    <div class="container">
+      <!-- <h1>안녕하세요</h1>
+      <h1>판다코딩입니다.</h1> -->
+      <div class="child">판다코딩</div>
+    </div>
+  </body>
+</html>

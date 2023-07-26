@@ -1,0 +1,36 @@
+/* .contatiner {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  font-size: 0px;
+  color: white;
+  font-weight: bold;
+}
+.top {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+}
+.left {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+.right {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+.bottom {
+  background-color: purple;
+  width: 400px;
+  height: 200px;
+} */
+
+/*정해진 크기는 총 100px씩 div가 4개 이지만 flex를 사용했기때문에 300px flexbox안에 크기를 줄여 들어갔다.*/
+.flexbox {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}

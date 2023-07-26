@@ -1,0 +1,13 @@
+@font-face {
+  font-family: natalic;
+  src: url(./Natalic.ttf);
+}
+.font {
+  font: italic small-cpas bold 12px/30px natalic;
+  font-style: italic;
+  font-weight: light; /*100~900숫자, light(=100),normal(=400),bold(=700),bolder(900)*/
+  font-variant: small-caps; /*소문자<->대문지*/
+  font-size: 36px;
+  line-height: natalic; /*줄간격*/
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
