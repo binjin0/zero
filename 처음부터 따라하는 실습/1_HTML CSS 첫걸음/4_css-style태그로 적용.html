@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--
+    style tag는 왜 head 안에 선언되는가?
+    html문서는 위에서부터 아래로 읽는다. 따라서 스타일링 적용을 앞에서해야 정상적으로 웹페이지 출력가능
+  -->
+    <style>
+      /*수많은 태그들을 더 쉽게 스타일링할 수 았다.*/
+      p {
+        font-size: 36px;
+        color: red;
+        font-weight: bold;
+      }
+      .title {
+        /*우선순위 id선택자보다 낮고 태그선택자보다 높다.*/
+        font-size: 36px;
+        color: green;
+        font-weight: bold;
+      }
+      #heading {
+        /*우선순위 class보다 높다.*/
+        font-size: 36px;
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      class="title"
+      id="heading"
+      style="font-size: 36px; color: black; font-weight: bold"
+    >
+      <!--인라인방식으로 스타일링한 것이 우선순위 가장 높다.-->
+      안녕하세요
+    </p>
+  </body>
+</html>
