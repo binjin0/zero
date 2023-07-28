@@ -1,0 +1,51 @@
+/* 오늘의 쇼핑 제안 */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 1080px;
+  margin: 0 auto;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+picture img {
+  width: 176px;
+  height: 40px;
+  margin: 100px 957px 48px 147px;
+}
+section {
+  width: 1022px;
+  height: 354px;
+  /* border: 1px solid black; */
+}
+#subject {
+  display: flex;
+}
+.title-icon {
+  background-image: url(/Mission-02/assets/icon/shopping.svg);
+  background-position: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+#product {
+  display: flex;
+  width: 100%;
+  height: 270px;
+  margin: 24px 0 30px;
+}
+.first-item {
+}
+.second-item {
+}
+.third-item {
+}
+.four-item {
+}
+.five-item {
+}
