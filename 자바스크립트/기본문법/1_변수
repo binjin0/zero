@@ -1,0 +1,24 @@
+변수 : 다양한 값을 담을 수 있는 박스와 같은 컨테이너
+값이 저장된 메모리 주소와 이름을 연결. 그 주소의 별칭
+
+<형식>
+변수명 =(<-할당연산자) 값
+cosnt 언어 = 'javascript'
+
+- 변수사용 방법1
+1. 선언(const위주로 연습하기)
+var, let, const
+let lang
+2. 할당
+lang='js'
+3. 재할당
+lang = 'js'
+
+- 변수사용방법2
+선언과 동시에 할당 ->추천방법
+let lang='javascript'
+
+- 복합할당연산자를 사용한 방법
+let countt=0;
+count = count+1 ;
+count+=1;
