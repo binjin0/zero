@@ -1,1 +1,164 @@
 /* 카테고리별 추천 광고상품 */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+h3 {
+  color: var(--black, #181818);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+section {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.category {
+  display: inline-block;
+  color: var(--black, #181818);
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 115%;
+}
+.ed {
+  display: inline-block;
+  color: var(--blue-600, #0074e9);
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.living {
+  display: inline-flex;
+  width: 1020px;
+  height: 634px;
+  border-color: var(--color-brown-300, #9d7a6d);
+  border-style: solid none;
+  border-width: 1px;
+  margin-bottom: 24px;
+}
+.living_name {
+  margin: 48px 61px 8px 24px;
+  color: var(--brown-300, #9d7a6d);
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+.living_go {
+  display: inline-block;
+  margin: 0 98px 248px 24px;
+}
+.living_hot {
+  margin: 0 63px 20px 24px;
+  color: var(--black, #181818);
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+.hashgroup {
+  margin: 0 26px 32px 24px;
+  width: 117px;
+  height: 212px;
+  display: inline-flex;
+  padding: 8px 7px 0px 0px;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*align-items: center; */
+}
+.key {
+  display: inline-flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--gray-400, #ccc);
+  background: var(--white, #fff);
+  margin-bottom: 12px;
+}
+.key a {
+  color: var(--brown-300, #9d7a6d);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.태그1 {
+  width: 52px;
+  height: 14px;
+}
+.태그6 {
+  /* width: 110px;
+  height: 14px; */
+  margin-bottom: 28px;
+}
+.carouselUI {
+  width: 320px;
+  height: 631px;
+  background-image: url(/Mission-03/Mission-03/assets/slides/houseware-downy.jpg);
+}
+.carouselUI_설명 {
+  display: flex;
+  width: 215px;
+  height: 51px;
+  padding: 19px 22px 20px 23px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background: var(--brown-300, #9d7a6d);
+  margin: 483px 30px 58px 30px;
+}
+.carouselUI_설명1 {
+  width: 205px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--grayscale-white-white, #fff);
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.carouselUI_설명2 {
+  width: 215px;
+  height: 19px;
+  flex-shrink: 0;
+  color: var(--grayscale-white-white, #fff);
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.carousel1 {
+  margin: 0px 8px 22px 144px;
+  width: 12px;
+  height: 12px;
+}
+.kitchen {
+  border-color: var(--color-green-700, #00b599);
+  border-style: solid none;
+  border-width: 1px;
+}
