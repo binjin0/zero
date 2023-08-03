@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./result.html" method="get">
+      <select name="color">
+        <!--여러개 선택하고 싶을 때 select태그에multipul속성을 추가하기도 하지만 보기 불편하기 떼문에 다른 태그를 사용한다.-->
+        <option value="red">빨간색</option>
+        <option value="blue">파란색</option>
+        <option value="green">초록색</option>
+      </select>
+      <div>
+        <!--form태그에 있는 것들은 반드시 lavel태그가 부여되야하는 것은 아니다.
+        그러나 html에 사용법에 맞게 태그를 사용하고 싶을때, input태그에 대한 설명을 부여하고 싶을때
+      는 label태그를 사용해야한다. 그리고 라디오나 체크박스일때는 라벨태그를 선택해도 선택할 수 있는 효과도 볼 수 있다.-->
+        <label>모자 :
+          <input type="checkbox" name="kind" value="hat">
+        </label>
+        <label for="top">상의 : </label>
+        <input id="top" type="checkbox" name="kind" value="top">
+      </div>
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>

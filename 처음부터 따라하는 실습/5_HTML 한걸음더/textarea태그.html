@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="./result.html" method="get">
+    <h1>게시글 작성</h1>
+    <div>
+      <label>제목 : <br />
+        <input type="text" name="" id="" >
+      </label>
+      <div>
+        <label for="">내용 : <br />
+          <!--
+            적여야할 내용이 많을 땐 input태그보단 textarea태그를 사용할 것!
+            textarea
+            - cols : heigth와 비슷
+            -rows : width와 비슷
+            ->지정한 cols,rows보다 text가 많아진다면 스크롤이 생긴다.
+
+            ->사용자에 의해 텍스트 상자의 크기가 변경되지 않고 고정되게 하려면
+            resize:none을 사용하면 된다.
+            -resize:none은 대화상자의 크기를 사용자가 임의로 변경하지 못하도록 고정시킨다.
+          -->
+          <textarea cols="30" rows="10"></textarea>
+        </label>
+      <br />
+      <input type="submit" value="등록">
+      </div>
+    </div>
+  </form>
+</body>
+</html>

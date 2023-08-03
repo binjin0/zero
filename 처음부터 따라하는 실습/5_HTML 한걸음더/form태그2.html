@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./result.html" method="get">
+      <select name="color">
+        <!--여러개 선택하고 싶을 때 select태그에multipul속성을 추가하기도 하지만 보기 불편하기 떼문에 다른 태그를 사용한다.-->
+        <option value="red">빨간색</option>
+        <option value="blue">파란색</option>
+        <option value="green">초록색</option>
+      </select>
+      <div>
+        <!--중복선택하고 싶을때는 checkbox-->
+        모자 : <input type="checkbox" name="kind" value="hat">
+        상의 : <input type="checkbox" name="kind" value="top">
+        하의 : <input type="checkbox" name="kind" value="bottom">
+        양말 : <input type="checkbox" name="kind" vlaue="socks">
+      </div>
+      <div>
+        <!--중복선택x하고 싶을때는 radio-->
+        남자 : <input type="radio" name="gender" vlaue="boy">
+        여자 : <input type="radio" name="gender" vlaue="girl">
+        
+      </div>
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>
