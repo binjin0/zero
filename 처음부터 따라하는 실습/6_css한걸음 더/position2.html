@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fixed, absoulute</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    .parent{
+      position: relative;
+    }
+    /* .target{
+      position: absolute;/*단 부모가 static이 아니어야함 왜냐하면 static은 기준이 없는 아이이기 때문에!
+      따라서 target의 현재 부모는 body로 인식! 즉 부모의 position이 어떠냐에 따라 위치를 영향을 받는다.
+      top: 100px;
+
+    } */
+    .target{
+      position: fixed;
+      width: 50%;
+      right: 0;
+      top: 50px;
+      border: 3px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="other">
+    other
+  </div>
+  <div class="parent">
+    parent
+    <div class="target">
+      target
+    </div>
+  </div>
+  <div class="other">
+    other
+  </div>
+</body>
+</html>
