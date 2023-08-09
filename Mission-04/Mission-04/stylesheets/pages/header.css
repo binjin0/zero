@@ -1,1 +1,308 @@
 /* 헤더 */
+body {
+  /* box-sizing: border-box; */
+  width: 1920px;
+  height: 150px;
+  margin: 0 auto;
+}
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+input {
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+
+  appearance: none;
+}
+select {
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+
+  appearance: none;
+}
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.header_top {
+  width: 1920px;
+  height: 24px;
+  background: var(--gray-100, #f3f3f3);
+}
+.header_loginbar {
+  list-style-type: none;
+  display: flex;
+  width: 1020px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0;
+}
+.header_loginbar li {
+  display: inline;
+  color: var(--black, #181818);
+
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+  margin-top: 5px;
+}
+.login {
+  order: 5;
+}
+.join {
+  order: 4;
+}
+.service_center {
+  order: 3;
+  margin-right: 8px;
+}
+.coupang {
+  order: 1;
+  margin-right: 8px;
+}
+.marketing {
+  order: 2;
+  margin-right: 744px;
+}
+#header_search {
+  display: grid;
+  width: 1020px;
+  height: 116px;
+  margin: 0 auto;
+  grid-template-columns: 110px 216px 575px 1fr;
+  grid-template-rows: 90px;
+  grid-template-areas:
+    "a b c d e"
+    "a f f f e";
+}
+.button--category {
+  display: flex;
+  width: 110px;
+  height: 116px;
+  padding: 30px 32.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: var(--blue-600, #0074e9);
+  grid-area: a;
+  border: none;
+}
+.button-image {
+  background-image: url(/Mission-04/Mission-04/assets/icon/hamburger.svg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  /* background-position: 0; */
+}
+.button-name {
+  width: 45px;
+  height: 14px;
+  color: var(--grayscale-white-white, #fff);
+
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+div#header_search h1 {
+  display: inline-block;
+  width: 176px;
+  height: 40px;
+  flex-shrink: 0;
+  background-image: url(/Mission-04/Mission-04/assets/logo/logo-mono.svg);
+  margin: 39px 30px 10px 40px;
+  vertical-align: middle;
+}
+.form_box {
+  display: inline-block;
+  position: relative;
+  width: 516px;
+  height: 45px;
+  flex-shrink: 0;
+  border: 1px solid var(--blue-600, #0074e9);
+  background: var(--white, #fff);
+  margin-top: 34px;
+  margin-left: 30px;
+  grid-area: c;
+}
+
+select {
+  position: absolute;
+  /* -webkit-appearance: none; */
+  width: 135px;
+  height: 40px;
+  flex-shrink: 0;
+  border: none;
+
+  color: var(--gray-700, #767676);
+
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-left: 12px;
+}
+svg {
+  position: absolute;
+  left: 94px;
+}
+
+input {
+  position: absolute;
+  width: 330px;
+  display: inline-flex;
+  height: 40px;
+  padding: 13px 131px 13px 10px;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid #0074e9;
+  border: none;
+  left: 135px;
+  outline: none;
+
+  color: var(--gray-600, #aaa9a9);
+
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+.mic {
+  position: absolute;
+  left: 430px;
+  background-image: url(/Mission-04/Mission-04/assets/icon/mic.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.search {
+  position: absolute;
+  left: 473px;
+  background-image: url(/Mission-04/Mission-04/assets/icon/search.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.myCoupang {
+  grid-area: d;
+  display: flex;
+  width: 90.937px;
+  height: 58px;
+  padding: 0px 20px 4px 22px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 29px;
+}
+/* .mycoupang_button {
+  display: flex;
+  width: 90.937px;
+  height: 58px;
+  margin: 0px 23.937px 4px 22px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+} */
+.mycoupang_button {
+  background-image: url(/Mission-04/Mission-04/assets/icon/my-coupang.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 7px 0;
+}
+.myCoupang span {
+  /* margin: 0px 23px 4px 22px; */
+  color: var(--black, #181818);
+
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+
+.cart {
+  grid-area: e;
+  margin-top: 29px;
+  display: flex;
+  width: 45.468px;
+  height: 58px;
+  padding: 0px 0.468px 4px 0px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cart_button {
+  background-image: url(/Mission-04/Mission-04/assets/icon/cart.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.cart span {
+  color: var(--black, #181818);
+  margin-left: -5px;
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+.menu {
+  /* display: inline-block; */
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  width: 755px;
+  height: 26px;
+  margin-top: 0;
+  margin-left: 36px;
+  padding: 0;
+}
+.menu li {
+  grid-area: f;
+  display: inline-block;
+  padding: 6px 12px;
+
+  color: var(--black, #181818);
+  /* Text/Regular/12 */
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+.header_bottom {
+  width: 1920px;
+  height: 1px;
+  background: #f3f3f3;
+}
