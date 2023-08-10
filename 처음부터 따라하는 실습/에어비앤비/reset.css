@@ -125,3 +125,9 @@ table {
 body {
   background-color: white;
 }
+button {
+  cursor: pointer;
+}
+html {
+  font-size: 16px;
+}
