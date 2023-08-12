@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+변수 : 변하는 수(수 == 모든것...?)
+형식 $ : 기호+"작명" : "저장할 내용";
+*/
+/*
+darken : 어둡게
+lighten : 밝게
+saturate : 더 선명하게(높은 채도)
+desaturate : 더 흐리게(낮은채도)
+adjust-hue : 명도 변경
+rgba:alpha값 변경
+*/
+body .box {
+  width: 100%;
+  background-color: #00498c;
+  color: white;
+}
+body .box:hover {
+  background-color: white;
+}
+body #test {
+  color: #00498c;
+}/*# sourceMappingURL=main.css.map */

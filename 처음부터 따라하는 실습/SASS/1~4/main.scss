@@ -1,0 +1,31 @@
+/*
+변수 : 변하는 수(수 == 모든것...?)
+형식 $ : 기호+"작명" : "저장할 내용";
+*/
+/*
+darken : 어둡게
+lighten : 밝게
+saturate : 더 선명하게(높은 채도)
+desaturate : 더 흐리게(낮은채도)
+adjust-hue : 명도 변경
+rgba:alpha값 변경
+*/
+$primary-color: #333;
+$color: #00498c;
+
+body {
+  .box {
+    width: 100%;
+    background-color: $color;
+    color: white;
+    &:hover {
+      background-color: white; //&를쓰면 .box가 부모가 되어 아래처럼 따로 선언하지 않아도 hover와 같은 속성을 넣을 수 있다.
+    }
+  }
+  // .box:hover {
+  //   background-color: white;
+  // }
+  #test {
+    color: $color;
+  }
+}

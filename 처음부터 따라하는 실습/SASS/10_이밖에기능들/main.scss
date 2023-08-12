@@ -1,0 +1,26 @@
+/*반복문, 가정문(조건문),변수:배열, 오브젝트*/
+// @for $i from 1 through 10 {
+//   .box:nth-of-type(#($i)) {
+//     width: 100px;
+//   }
+// }
+
+$list: orange, blue, red, yellow;
+$object: (
+  1: orange,
+  2: blue,
+  3: yellow,
+);
+@each $key, $color in $object {
+  .box-#{$key} {
+    background-color: $color;
+  }
+}
+$statement: blue;
+p {
+  @if $statement ==blue {
+    color: blue;
+  } @else {
+    color: red;
+  }
+}
