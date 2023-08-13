@@ -10,12 +10,12 @@
     <h1 id="heading">제목입니다.</h1>
     <p>내용입니다.</p>
     <button>수정하기</button><br />
-    <button onclick="모달창열기()">삭제하기</button>
+    <button onclick="모달창열고닫기('block)">삭제하기</button>
     <div class="modalDiv">
-      <div class="bg"></div>
+      <div class="bg" onclick="모달창열고닫기('none')"></div>
       <div class="modal">
         <p>정말삭제하시겠습니까?</p>
-        <button>취소</button>
+        <button onclick="모달창열고닫기('none')">취소</button>
         <button>삭제</button>
       </div>
     </div>
@@ -25,10 +25,11 @@
       1.html/css ui를 만듭니다.
       2. css로 숨긴다.
       3.js로 다시 나타나게 한다.
+      dry : don't repeat yout code . 우리코드에서 반복되는부분을 최소화하여 코딩하자 개발자의 마인드.
       */
-      function 모달창열기() {
+      function 모달창열고닫기(인자) {
         var 모달 = document.querySelector(".modalDiv");
-        모달.style.display = "block";
+        모달.style.display = 인자;
       }
     </script>
   </body>

@@ -12,10 +12,10 @@
     <button>수정하기</button><br />
     <button onclick="모달창열기()">삭제하기</button>
     <div class="modalDiv">
-      <div class="bg"></div>
+      <div class="bg" onclick="모달창닫기()"></div>
       <div class="modal">
         <p>정말삭제하시겠습니까?</p>
-        <button>취소</button>
+        <button onclick="모달창닫기()">취소</button>
         <button>삭제</button>
       </div>
     </div>
@@ -25,10 +25,15 @@
       1.html/css ui를 만듭니다.
       2. css로 숨긴다.
       3.js로 다시 나타나게 한다.
+      dry : don't repeat yout code . 우리코드에서 반복되는부분을 최소화하여 코딩하자 개발자의 마인드.
       */
       function 모달창열기() {
         var 모달 = document.querySelector(".modalDiv");
         모달.style.display = "block";
+      }
+      function 모달창닫기() {
+        var 모달 = document.querySelector(".modalDiv");
+        모달.style.display = "none";
       }
     </script>
   </body>
