@@ -1,0 +1,18 @@
+body {
+  margin: 20px;
+}
+#box {
+  width: 100px;
+  height: 100px;
+  background-image: url("./사진.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden; /*넘쳐흐른것을숨겨준다.*/
+  transition: width 1s ease-in;
+}
+#box2 {
+  transition: width 1s ease-in;
+}

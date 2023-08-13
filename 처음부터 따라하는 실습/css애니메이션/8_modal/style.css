@@ -1,0 +1,26 @@
+body,
+p {
+  margin: 0px;
+}
+.modalDiv {
+  display: block;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  padding: 20px;
+  border-radius: 14px;
+}

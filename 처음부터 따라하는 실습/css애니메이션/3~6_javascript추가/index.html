@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <!-- <div class="box-overloay">
+        <p>판다코딩</p>
+        <p>010-1111-1111</p>
+      </div> -->
+    </div>
+    <div
+      id="box2"
+      style="width: 100px; height: 100px; background-color: red"
+    ></div>
+    <script>
+      /*js는 대초부터 웹 ui를 제어하기 위한 언어였다.
+      <css를위한 js사용법>
+      1.js로 제어하고 싶은 html태그를 선택
+      2. 어떤 이벤트가 발생했으 ㄹ때 제어할 것인지 선택
+      3.css를 변경
+      */
+      var 박스 = document.getElementById("box");
+      var 박스2 = document.getElementById("box2");
+      박스.addEventListener("mouseover", function () {
+        박스2.style.width = "200px";
+      });
+      박스.addEventListener("mouseout", function () {
+        박스2.style.width = "100px";
+      });
+    </script>
+  </body>
+</html>

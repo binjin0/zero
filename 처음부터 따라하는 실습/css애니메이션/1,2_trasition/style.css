@@ -1,0 +1,39 @@
+body {
+  margin: 20px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-image: url("./사진.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  position: relative;
+  /*overflow: hidden;넘쳐흐른것을숨겨준다.*/
+}
+.box-overloay {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background-color: blue;
+  top: 100px;
+  left: 0;
+  transition: all 1s ease-in-out; /*몇초라는 시간동안 변화된다.*/
+  /*trasition : css의 변화가 생길때 trasition을 사용하면 그 변화되는 속도를 제어함.*/
+}
+.box-overloay p {
+  margin: 0px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+.box:hover .box-overloay {
+  top: 0px;
+}
