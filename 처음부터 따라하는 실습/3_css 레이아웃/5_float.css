@@ -27,7 +27,13 @@ p {
   float: left;
 }
 .bottom {
-  clear: both; /*이것은 bottom이 float으로 인해 위로 올라가는 것은 방지하기 위한 코드*/
+  /*이것은 bottom이 float으로 인해 위로 올라가는 것은 방지하기 위한 코드
+  clear : 취소하다
+  -none : clear설정하지 않음.
+  -left : 왼쪽 취소
+  -right : 오른쪽 취소
+  -both : 오른쪽 왼쪽 취소*/
+  clear: both;
   background-color: purple;
   width: 400px;
   height: 200px;
