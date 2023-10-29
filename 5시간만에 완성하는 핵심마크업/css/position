@@ -1,0 +1,33 @@
+일반적으로 position을 설정하지 않았을 때는 Normal Flow로 요소들이 배치된다.
+Normal Flow란?
+요소의 레이아웃을 전혀 제어하지 않았을 때, 브라우저에서 기본적으로 요소가 배치되는 흐름
+즉 요소마다 배치되는 Normal Flow가 있는데 이를 벗어나서 다르게 배치하기 위해서는 position이라는 특성을 사용한다.
+
+
+position 
+->요소를 어떻게 배치할지 결정하는 css속성
+
+poisition 속성 : top,bottom,left, right
+postion 종류
+-static
+default값으로 top,bottom,left,right 속성을 사용할 수 없다. 작성해도 무시된다. 단순히 normal flow로 배치된다.
+
+-absolute
+요소를 Normal Flow에서 제거하고, 가장 가까운 부모 요소를 기준으로 top,right,bottom,legt로 위치 지정한다.
+단 부모는 postion이 static이 아닌 가장 가까운 부모요소가 선택된다.(없으면 body가 부모가됨)
+Normal Flow에서 제거되므로, 마치 float처럼 새로운 레이어가 추가되어 둥둥 뜨게 된다.
+주로 기준점으로 잡고싶은 부모를 postion:relative로 설정하고 자식요소를 position:absolute로 자주 쓴다.
+-relative
+Normal Flow를 따라 배치한 원래 자기 자신의 위치를 기준으로 top,right,bottom,left의 값으로 위치를 지정한다.
+값은 양수값,음수값 모두 가능
+만약 반대가 되는 값을 동시에 선언하면
+1. top,bottom을 동시 선언하는 경우 -> top만 적용
+2. left,right를 동시에 선언하는 경우 -> left만 적용
+-fixed
+요소를 Normal Flow에서 제거하고 눈에 보이는 뷰포트를 기주으로 top,right,bottom,left값을 이용하여 위치를 지정
+즉 스크롤을해도 계속 따라오기때문에 팝업창, 문의하기 버튼, 네비게이션 바, 광고창 등에 자주 사용한다.
+-sticky
+Normal Flow를 따르고 가장 가까운 스크롤이 되는 부모를 기준으로 top,right, bottom, left값에 따라 위치가 지정된다.
+sticky라는 이름답게 스크롤을 내리다가 특정 시점부터 fixed처럼 동작한다.
+
+
