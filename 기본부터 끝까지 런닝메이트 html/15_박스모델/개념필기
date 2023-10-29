@@ -45,7 +45,7 @@ border,padding,content가 없고 height 또한 존재하지 않으면, 해당 �
 (즉 자기자신의 margin-top과 margin-bottom이 만나는 현상을 말하는 것이다.)
 
 3-2. 여백 - padding
-- padding-top, paddint-right, paddint-bottom, paddint-left을 한줄로 나타낼 수 있는 단축속성(shorthand)
+- padding-top, padding-right, padding-bottom, padding-left을 한줄로 나타낼 수 있는 단축속성(shorthand)
 - 음수값 사용할 수 없음
 - %값 : 부모의 width의 %값이 들어간다.
 

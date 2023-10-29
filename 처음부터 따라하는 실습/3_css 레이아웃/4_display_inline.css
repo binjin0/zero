@@ -2,7 +2,7 @@
   width: 400px;
   height: 600px;
   border: 1px solid black;
-  font-size: 0px;
+  font-size: 0px; /*font-size는 상속됨. 따라서 하위 자식들에게 적용되어 html에서 넣은 공백들을 모두 없애주고 붙게된다.*/
   color: white;
   font-weight: bold;
 }
