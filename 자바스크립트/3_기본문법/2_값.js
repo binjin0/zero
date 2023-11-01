@@ -1,6 +1,6 @@
 /* 
 1. 원시 값
-객체가 아니면서 메서드도 가지지 않는 데이터. 
+객체가 아니면서 메서드도 가지지 않는 데이터. 불변함.
 string,number,boolean,undefined, symbol,null이 존재한다.
 원시값 자체는 불변하여 변형할 수 없다. 하지만 원시값을 할당한 변수는 새로운 값을 다시할 당할 수 이썽
 바뀐 것처럼 나타낼 수는 있다.
@@ -30,7 +30,7 @@ const str2 = "문자열";
 const nu = null;
 
 console.log(typeof un);
-console.log(typeof nu); //object
+console.log(typeof nu); //object 왜 null로 뜨는지는 나중에~!!
 console.log(typeof bool);
 console.log(typeof num);
 console.log(typeof str2);

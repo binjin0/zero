@@ -8,7 +8,7 @@ const arr = [data, num, boolean, "name"];
 console.log(arr.length);
 console.log(arr[2]); //배열은 0번째부터 시작
 
-console.log(typeof arr); //object 불변객체
+console.log(typeof arr); //object 객체처럼 취급됨.불변하지 않음.
 arr[4] = "Test";
 arr[0] = "첫번째";
 arr[1] = "second";

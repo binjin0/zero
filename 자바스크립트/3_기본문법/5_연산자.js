@@ -18,7 +18,9 @@ console.log(count);
 4.비트연산자
 5.논리연산자 ->중요
 && =>그리고,and
+true&&true만 true반환
 || => 또는, or
+false||fasle만 fasle반환
 ! => 부정, not
 !! =>부정의부정, 불리언
 

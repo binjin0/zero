@@ -1,4 +1,4 @@
-//ㅎ마수 선언문
+//함수 선언문
 function func(num) {
   if (10 > num) {
     return "hello";
