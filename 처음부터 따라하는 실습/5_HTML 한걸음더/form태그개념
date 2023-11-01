@@ -25,8 +25,10 @@
       placeholder - 사용자가 input태그에 어떠한 값을 입력해야하는지 알려줌.
 
       label
+      label 사용가능한 태그
+      -> <button>, <input>, <meter>, <output>, <progress>, <select>, <textarea>
       사용법
-      1. label로 input과 같은 태그 앞에 쓰고 label의 for속성과 태그의 id속성을 갖게하여 둘을 이어주기
+      1. label로 input과 같은 태그 앞에 쓰고 label의 for속성과 태그의 id속성을 같게하여 둘을 이어주기
       2. label로 input과 같은 태그 감싸주기
       => 이렇게 연결해주면 나타나는 효과는
       바로 label의 콘텐츠를 클릭해도 input태그가 같이 선택된다. 이해가 안간다면 강의 참조하기
