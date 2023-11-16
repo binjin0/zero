@@ -1,0 +1,26 @@
+
+1. typeof
+primitive =>string number bigint boolean undefined symbol null
+위와 같은 primitive를 비교할때 사용한다.
+
+ex)
+typeof 'string' -> string
+typeof 123 -> number
+
+2. instanceof
+객체의 인스턴스가 어떤 생성자로 생성될 것인지 확인할 때 사용
+
+{} instaceof Object
+
+예시
+const obj={};
+const arr =[]
+const func =function (){};
+obj instanceof Object  ->true
+arr instanceof Array ->true
+func instanceof Function  ->true
+
+
+undefined instanceof Object ->false
+null instanceof Object -> false (따라서 null은 원시값이라는 것 확실히 알 수 있다.)
+

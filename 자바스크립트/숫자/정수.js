@@ -5,7 +5,7 @@
 2.비트연산자를 이용 32비트 정수로 바꿔 반환*/
 
 //안전한 정수의 최대값
-Number.MIN_SAFE_INTEGER;
+Number.MAX_SAFE_INTEGER;
 
 //안전한 정수의 최소값
 Number.MIN_SAFE_INTEGER;

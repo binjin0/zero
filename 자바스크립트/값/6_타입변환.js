@@ -1,8 +1,10 @@
 /*
-원시적 & 명시적 형 변환
+암시적 & 명시적 형 변환
 */
 // !!-> ㅠboolean
 // Number(값) String(값) Boolean(값) Array.from() <- 명시적인 형변환
+
+//암시적인 형변환
 const result1 = 1 + "입니다.";
 console.log(result1); //1입니다. (암시적인 형변환)
 console.log(typeof result1); //string
