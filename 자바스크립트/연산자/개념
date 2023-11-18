@@ -24,3 +24,13 @@ func instanceof Function  ->true
 undefined instanceof Object ->false
 null instanceof Object -> false (따라서 null은 원시값이라는 것 확실히 알 수 있다.)
 
+3. 기타연산자
+
+-콤마연산자
+ex)
+123456, 'ABC'
+
+-void 연산자
+표현식을 평가하고 undefined를 표출하는 연산자
+
+-

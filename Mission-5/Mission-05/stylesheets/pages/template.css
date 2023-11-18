@@ -254,7 +254,7 @@ h1 {
   gap: 50px;
   flex-shrink: 0;
 
-  color: var(--gray-200, #e7e7e7);
+  color: var(--gray-200, #e7e7e7c1);
 
   /* Text/Light/12 */
   font-family: Noto Sans;
