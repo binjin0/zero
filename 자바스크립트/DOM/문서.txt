@@ -1,0 +1,12 @@
+HTML -> 문서
+문서를 조작하는 언어 => JavaScript
+
+자바스크립트로 이 html을 어떻게 조작하냐?
+-> Document Object Model로!
+
+*DOM
+-Node들이 가득하다.
+Node?html 요소 하나한의 단위
+Node는 결국 수많은 속성(프로퍼티), 메소드를 가진다.  
+
+
