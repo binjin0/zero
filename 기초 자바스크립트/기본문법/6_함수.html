@@ -1,0 +1,45 @@
+<!--
+함수
+-기능을 의미
+-어떤 기능을 만든 코드 집합
+-독립적으로 설계
+
+함수호출
+-기능 부르기
+
+함수 필요성
+- 반복적인 코드 작성 피할 수 있음 ->개발시간 단축
+- 코드 간결화->가독성 up
+- 쉬운 유지보수
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //두수를 곱하는 함수
+
+      //함수 정의
+      function multiple(num1, num2) {
+        return num1 * num2;
+      }
+      document.write(multiple(2, 4)); //함수 호출
+      document.write("<br>");
+
+      //1~10까지 홀수 합을 리턴하는 함수만들기
+      function oddSum() {
+        let sum = 0;
+        for (let i = 1; i < 11; i += 2) {
+          sum += i;
+        }
+        return sum;
+      }
+      document.write(oddSum());
+    </script>
+  </body>
+</html>
