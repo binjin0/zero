@@ -1,0 +1,38 @@
+<!--
+  문자열 변환 방법
+  1. 더하기 연산
+  2. repplace()
+  첫번째 문자 변환하는 함수
+  3. replaceAll()
+  전체 문자 변환하는 함수
+  4. toLocalLowerCase()
+  5. toLocaleUpperCase()
+  6. toLowerCase()
+  문자열에서 대문자를 소문자로 변환하는 함수
+  7. toUpperCase()
+  문자열에서 소문자를 대문자로 변환하는 함수
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let text = "Hello World";
+      let rtn = text.replace("l", "L");
+      let rtn1 = text.replaceAll("l", "L");
+      let rtn2 = text.toLowerCase();
+      let rtn3 = text.toUpperCase();
+
+      document.write("결과 값?" + rtn + "<br>");
+      document.write("결과 값?" + rtn1 + "<br>");
+      document.write("결과 타입 ?" + typeof rtn + "<br>");
+      document.write("결과 값?" + rtn2 + "<br>");
+      document.write("결과 값?" + rtn3 + "<br>");
+    </script>
+  </body>
+</html>

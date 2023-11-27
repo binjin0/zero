@@ -1,0 +1,45 @@
+<!--
+  문자열 병합
+  - 문자열과 문자열을 합치는 것
+
+  문자열 병합 방법
+  1. 더하기 연산
+  2. concat()
+  배열이나 값을 합쳐서 반환하는 함수
+  3. join()
+  배열을 하나의 문자열로 합쳐서 반환하는 함수
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let text1 = "Hello";
+      let text2 = "world";
+
+      let text3 = ["H", "e", "l"];
+      let text4 = ["l", "o ", "w"];
+
+      //더하기 연산
+      let rtn = text1 + " " + text2;
+      document.write("결과값은?" + rtn + "<br>");
+      document.write("결과 타입은?" + typeof rtn + "<br>");
+
+      //concat()
+      let rtn1 = text1.concat(text2);
+      let rtn2 = text3.concat(text4); //배열도 합치기 가능~
+      document.write("결과값은?" + rtn1 + "<br>");
+      document.write("결과 타입은?" + typeof rtn1 + "<br>");
+      document.write("결과값은?" + rtn2 + "<br>");
+      document.write("결과 타입은?" + typeof rtn2 + "<br>");
+      //join()
+      let rtn3 = text3.join(",");
+      document.write("결과값은?" + rtn3 + "<br>");
+      document.write("결과 타입은?" + typeof rtn3 + "<br>");
+    </script>
+  </body>
+</html>

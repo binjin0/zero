@@ -1,0 +1,52 @@
+<!--
+  문자열 접근 방법
+
+  1. charAt()
+  문자열 접근하는 함수
+  2. charCodeAt()
+  3. startsWith()
+  특정문자로 시작하는지 확인하는 함수
+  반환값 ture, false
+  4. endsWith()
+  특정 문자로 끝나는지 확인하는 함수
+  반환값 true, false
+  5. indexOf()
+  문자열에서 검색하는 문자열과 같은 첫번째 인덱스를 반환하는 함수
+  일치하는 값이 있는 경우 그 위치하는 인덱스를 반환. 없다면 -1반환
+  6. lastIndexOf()
+  7. 문자열[index]
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // charAt()
+      let text = "Hello";
+      let rtn = text.charAt(1); //괄호안에는 문자열에서 몇번째 문자에 접근할 것인지 숫자 적기.
+      document.write("결과값은?" + rtn + "<br>");
+
+      // startsWith()
+      let rtn1 = text.startsWith("He");
+      let rtn2 = text.startsWith("el");
+      let rtn3 = text.startsWith("123");
+
+      document.write("결과 값은?" + rtn1 + "<br>");
+      document.write("결과 값은?" + rtn2 + "<br>");
+      document.write("결과 값은?" + rtn3 + "<br>");
+
+      //indexOf
+      let rtn4 = text.indexOf("He");
+      let rtn5 = text.indexOf("el");
+      let rtn6 = text.indexOf("123");
+
+      document.write("결과 값은?" + rtn4 + "<br>");
+      document.write("결과 값은?" + rtn5 + "<br>");
+      document.write("결과 값은?" + rtn6 + "<br>");
+    </script>
+  </body>
+</html>
