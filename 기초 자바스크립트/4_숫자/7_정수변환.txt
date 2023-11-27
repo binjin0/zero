@@ -1,0 +1,13 @@
+Number.isInteger(num)
+
+- 정수인지 판별하는 함수
+- 매개변수 값 num은 정수인지 확인하는 값
+- 반환 값은 참(true)과 거짓(false)
+따라서 반환 타입은 Boolean
+
+
+Number.parseInt(num)
+- 정수로 변환하는 함수
+- 매개변수 값 num은 정수로 변환할 값
+- 반환 값은 변환된 값
+- 반환 타입은 Number

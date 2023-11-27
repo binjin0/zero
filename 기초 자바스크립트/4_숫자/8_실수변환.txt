@@ -1,0 +1,6 @@
+Number.parseFloat(val)
+
+- 실수로 변환하는 함수
+- 매개변수 값 val은 실수로 변환할 값
+- 반환 값은 변환된 값
+- 변환 타입은 Number

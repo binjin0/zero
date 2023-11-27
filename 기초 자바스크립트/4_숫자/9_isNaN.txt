@@ -1,0 +1,6 @@
+Number.isNaN(num)
+
+- NaN인지 판별하는 함수
+- 매개변수 num은 NaN인지 확인하는 값
+- 반환 값은 참(true)과 거짓(false)
+- 반환 타입은 Boolean
