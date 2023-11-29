@@ -1,0 +1,58 @@
+<!--
+  DOM 활용 - 노드추가
+
+  1. createElement(name)
+  2. createTextNode(text)
+  3. createAttribute(name)
+  4. createComment(text)
+  5. appendChild(node)
+
+  DOM 확용 - 속성추가
+  1. setAttribute(name, value)
+  2. getAttribute(name)
+  3. setAttributeNode(name)
+  4. getAttributeNode(node)
+
+  
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Dom 문서구조</h1>
+    <ul id="link">
+      <li id="google">구글</li>
+      <li>
+        <a href="http://www.google.com" class="link-class" name="link-name"
+          >네이버</a
+        >
+      </li>
+      <li>
+        <a href="http://www.naver.com" class="link-class" id="link-name"
+          >카카오</a
+        >
+      </li>
+    </ul>
+
+    <script>
+      let liTag = document.createElement("li");
+      let text = document.createTextNode("라인");
+      liTag.appendChild(text);
+
+      //appendChild
+      document.getElementById("link").appendChild(liTag);
+
+      //setAttribute
+      //아래는 <a href="http://www.google.com">구글</a> 을 만드는 과정
+      let linkId = document.getElementById("google");
+      let link = document.createElement("a");
+      link.setAttribute("href", "http://www.google.com");
+      link.innerText = "구글";
+      linkId.appendChild(link);
+    </script>
+  </body>
+</html>

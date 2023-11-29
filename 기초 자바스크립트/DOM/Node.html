@@ -1,0 +1,73 @@
+<!--
+  Node
+  - HTML 문서 트리를 구성하는 단위
+
+  노드이름
+  - 노드의 이름, 태그에 따라 다른 값 지님
+  
+  노드 값
+  -노드의 값
+
+
+  NodeType
+  1 -> 엘리먼트 노드 : 태그 하나 , 엘리먼트 노드의 속성값은 null
+  2 -> 속성 노드 : 태그 속성, 속성 노드의 속성값은 속성값
+  3 -> 텍스트 노드 : 태그 안 내용, 텍스트 노드의 속성값은 내용
+  4 -> 주석 노드 : 주석, 주석 노드의 속성값은 내용
+  5 -> 문서노드  : 문서전체, 문서 노드의 속성값은 내용
+
+
+  노드 속성
+  firstChild : 첫번째 자식 노드 구하기
+  lastChild : 마지막 자식 노드 구하기
+  parentNode : 부모 모드 구하기
+  childNodes : 모든 자식 노드 구하기
+  previousSibling : 이전 형제 노드 구하기
+  nextStibling : 다음 형제 노드 구하기
+  Attributes : 속성구하기
+  localName : 노드명 구하기
+  textContent : 문자열로 된 내용 구하기
+  ownerDocument : 가장 상위 노드 구하기
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Dom 문서구조</h1>
+    <ul>
+      <li><a href="http://www.google.com" id="link1">구글</a></li>
+      <li><a href="http://www.naver.com" id="link2">네이버</a></li>
+      <li></li>
+    </ul>
+    <script>
+      let tag = document.getElementById("title");
+      let str =
+        "노드타입:::" +
+        tag.nodeType +
+        "<br>" +
+        "노드이름 :::" +
+        tag.nodeName +
+        "<br>" +
+        "노드값 :::" +
+        tag.nodeValue +
+        "<br>";
+      document.write(str);
+
+      //link2에 접근해서 걔가 가지고 있는 마지막 child출력하기, 부모 노드 구하기
+      let tag1 = document.getElementById("link2");
+      let str1 =
+        "lastChild :::" +
+        tag1.lastChild.nodeValue +
+        "<br>" +
+        "parentNode :::" +
+        tag1.parentNode.nodeName +
+        "<br>" +
+        "<br>";
+      document.write(str1);
+    </script>
+  </body>
+</html>

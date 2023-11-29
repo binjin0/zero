@@ -1,0 +1,28 @@
+Element 속성 
+
+ID
+tagName
+innerHTML
+style
+
+
+
+Element 함수
+setAttribute(name,value) : 속성 변경하기
+getAttribute(name) : 속성 찾기
+getAttributeNode(name) : 속성 노드 찾기
+getElementsByTagName(name) : 태그이름명으로 모든 자식 찾기
+hasAttribute(name) : 속성존재여부확인
+removeAttribute(name) : 속성 삭제
+
+
+
+Attr 속성
+name
+value
+isId
+
+Attr 함수
+setNamedItme(name) : 추가 또는 변경
+getNamedItem(name) : 속성 읽기
+removeNamedItem(name) : 삭제
