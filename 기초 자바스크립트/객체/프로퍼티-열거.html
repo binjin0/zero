@@ -1,0 +1,57 @@
+<!--
+  배열열거 vs 프로퍼티 열거
+
+  배열열거
+  - 배열 순회
+  - 순서 보장
+  - length, index 있음
+  - for문, for-in문, forEach문, Map, filter,reduce
+
+
+  프로퍼티 열거
+  - 객체 순회
+  - 순서 미보장
+  - length, index 없음
+  - Object.key(),for-in문, Object.values(), Object.entries()
+ 
+  1. object.keys()
+  객체에서 key를 배열로 반환
+
+  2. Obejct.values()
+  객체에서 value를 배열로 반환
+
+  3. Object.entries()
+  객체에서 key와 value를 배열로 반환
+
+  4. for-in문
+  반복문인 for문과 비슷
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var info = {
+        age: 20,
+        name: "홍길동",
+        interests: ["music", "dancing"],
+        desc: function () {
+          alert("나의 정보입니다.");
+        },
+      };
+
+      console.log(Object.keys(info));
+      console.log(Object.values(info));
+      console.log(Object.entries(info));
+
+      for (let i in info) {
+        console.log(i); //value가 출력됨.
+        console.log(info[i]);
+      }
+    </script>
+  </body>
+</html>
