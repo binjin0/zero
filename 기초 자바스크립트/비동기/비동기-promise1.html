@@ -1,0 +1,59 @@
+<!--
+  Promise
+  -비동기 실행 결과를 반환하는 객체
+  =>성공과 실패
+  -ES6에서 도입
+  - callback hell 해결
+
+
+  poromise 사용방법
+  
+  resolve,reject : 인수를 전달하는 실행함수
+  resolve : 비동기 작업종료시 resolve호출하여 실행
+  reject : 비동기 작업 중간 오류 발생시 reject 호출하여 실행
+
+  promise 상태
+  1. pedding (대기)
+  - 초기상태
+  2.Fullfilled (이행)
+  - 성공
+  3. Rejected (거부)
+  - 실패
+
+  promise 메소드
+  then() : 결과값과 로직 담은 것을 콜백함수로 받음
+  catch() : 예외 처리(실패)하는 로직을 콜백함수로 받음
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // //콜백함수 이용
+      // //더하기 함수 선언
+      // function sum(num1, num2, callback) {
+      //   var result = num1 + num2;
+      //   callback(result);
+      // }
+      // //더하기 함수 호출 콜백함수 익명함수
+      // sum(10, 20, function (result) {
+      //   console.log(result);
+      // });
+
+      //Promise방법
+      //더하기 함수 선언언
+      function sum(num1, num2, callback) {
+        return new Promise((resolve, reject) => {
+          resolve(num1 + num2);
+        });
+      }
+      //함수 호출
+      //then? 결과값과 로직 담은 것을 콜백함수로 받음
+      sum(10, 20).than((result) => console.log(result));
+    </script>
+  </body>
+</html>
