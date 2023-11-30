@@ -1,0 +1,37 @@
+<!--
+  프로토타입 체인
+  - __proto__이용하여 부모객체 프로퍼티 또는 함수 검색하는 것 => 프로포타입공유
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Info생성자
+      function Info(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      //생성자 new 연산자 이용하여 선언
+      var info1 = new Info("홍길원", 31);
+
+      //constructor:f Info(name,age)
+      var parent1 = info1.__proto__;
+      console.log(parent1);
+      //constructor:f,__defineGetter__:f,__defineSetter__:f,hasOwnProperty:f,__lookupGetter__:f,...}
+      var parent2 = parent1.__proto__;
+      console.log(parent2);
+
+      //최상위 객체 null
+      //null
+      var parent3 = parent2.__proto__;
+      console.log(parent3);
+    </script>
+  </body>
+</html>

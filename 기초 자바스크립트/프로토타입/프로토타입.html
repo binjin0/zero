@@ -1,0 +1,66 @@
+<!--
+  프로토타입
+  -객체의 원래 상태
+  - 같은 생성자로부터 생성된 객체는 프로토타입을 공유
+  =>메모리 절약
+  - 자바스크립트 내에 존재하는 생성자함수는 암시적으로 프로토타입 존재 ex)Array()
+  - 직접 생성한 생성자 함수에서 만든 함수를 공통으로 사용할 경우 명시적으로 프로토타입 생성해야됨.
+  ex)Info
+
+  __ptoto__란?
+  - prototype 확인 용도
+  - 모든 객체 지님
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prototypeCreate</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function Info(name, age) {
+        this.name = name;
+        this.age = age;
+        //이부분은 공통적으로 사용하는 함수이다.따라서 밖으로 빼서 프로토타입으로 생성하는 것이 메모리 효율에 좋다.
+        this.wrtie=function(){console.log(
+          "이름은 '" + this.name + "', 나이는 '" + this.age + "살' 입니다."
+        );
+        }
+      }
+      
+      */
+      //*직접 생성한 생성자함수에서는 별도의 프로토타입 존재하지않음. 따라서 명시적으로 작성해줘야함
+      function Info(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      //별도로 프로토타입 명시해줌.
+      /*<프로토타입 생성>
+      생성자함수이름.prototye.함수이름 */
+      Info.prototype.write = function () {
+        console.log(
+          "이름은 '" + this.name + "', 나이는 '" + this.age + "살' 입니다."
+        );
+      };
+      //생성자 함수 만들어서 new 연산자 만들어 객체 생성.
+      var info1 = new Info("홍길일", 31);
+      var info2 = new Info("헝길투", 32);
+      var info3 = new Info("홍길삼", 33);
+
+      info1.write();
+      info2.write();
+      info3.write();
+
+      //info1,info2,info3에 대한 정보 출력
+      console.log(info1);
+      console.log(info2);
+      console.log(info3);
+    </script>
+  </body>
+</html>

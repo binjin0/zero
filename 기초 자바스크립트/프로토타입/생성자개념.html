@@ -1,0 +1,37 @@
+<!--
+  생성자
+  - 객체 생성하는 함수
+  - 함수명 첫글자 대문자
+  - new 키워드 사용하여 호출
+  - this 키워드 이용
+
+  생성자 사용 이유
+  1. 번거로움 해결 (구조를 정해놔서 편리)
+  2. 생성자 하나로 여러 객체 생성 가능 =>메모리 효율적으로 관리 가능
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //객체를 아래와 같이 생성하면 새로운 거 만들 때마다 아래와 같은 코드 적어야함 => 번거로움
+      var info1 = { name: "홍길원", age: 30 };
+      var info2 = { name: "홍길투", age: 40 };
+      var info3 = { name: "홍길삼", age: 50 };
+
+      //this사용하여 생성자 함수 만들어놓으면 아래와 같이 편리하게 데이터 추가 가능
+      function Info(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      var info4 = new Info("홍길원", 30);
+      var info5 = new Info("홍길투", 40);
+      var info6 = new Info("홍길삼", 50);
+    </script>
+  </body>
+</html>
