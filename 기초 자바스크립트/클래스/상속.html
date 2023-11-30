@@ -1,0 +1,71 @@
+<!--
+  상속(extends)
+  -부모가 자식에게 물려주는것
+  => 부모 class가 자식 class에게 물려주는 것
+  => 자식class는 부모 class사용가능
+
+  사용방법
+  class 자식 클래스명 extends 부모 클래스명
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //계산하는 class 생성
+      class Calc {
+        constructor(num1, num2) {
+          this.num1 = num1;
+          this.num2 = num2;
+          this.result = 0;
+        }
+        //더하기 함수
+        sum() {
+          this.result = this.num1 + this.num2;
+          return this.result;
+        }
+        //빼기 함수
+        subs() {
+          if (this.num1 >= this.num2) {
+            this.result = this.num1 - this.num2;
+          } else {
+            this.result = this.num2 - this.num1;
+          }
+          return this.result;
+        }
+        //결과 출력함수
+        write() {
+          return this.result;
+        }
+      }
+      class Result extends Calc {
+        //이부분에 굳이 부모에서 정의한거 가져온다는 코드 안적어도 사용가능하지만 적는다면 아래와 같다
+        sum() {
+          super.subs();
+        }
+        subs() {
+          super.subs();
+        }
+
+        //메소드 오버라이딩(재정의)
+        write() {
+          return "결과는??" + this.result;
+        }
+      }
+      //부모 Class
+      let calc = new Calc(10, 20);
+      clac.subs();
+      console.log(calc.write());
+
+      //자식 Class
+      let result = new Result(10, 20);
+      result.sum();
+      console.log(result.write());
+    </script>
+  </body>
+</html>

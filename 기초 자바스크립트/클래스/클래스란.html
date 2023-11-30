@@ -1,0 +1,76 @@
+<!--
+  클래스(class)
+  - 객체를 생성하기 위한 특, 객체x
+  - 클래스 안에 데이터 없음
+  - 메모리에 올라가지 않음
+
+  클래스는 getter / setter가짐
+  Getter : 프로퍼티 값을 가져오기 위한 함수
+  get 함수명(){
+    return this._변수명;
+  }
+
+  Setter : 프로퍼티 값을 설정하기 위한 함수
+  set 함수명(value){
+    this._변수명=value;
+  }
+
+
+클래스 프로퍼티
+Private 프로퍼티
+- 외부 접근 불가능
+- Class안 에서만 사용,변경 가능
+- 변수 앞에 #붙임
+
+Public 프로퍼티
+- 외부 접근 가능
+- Class 외부에서 사용, 변경 가능
+- 변수 앞에 #안붙임.
+
+
+-->
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //클래스 생성
+      //class 클래스명(맨앞 대문자){ //생성자 //관련함수}
+      class Info {
+        #privateValue = "홍길순";
+        publicValue = "50kg";
+        //생성자
+        constructor({ name, age }) {
+          this.name = name;
+          this.age = age;
+        }
+
+        //getter setter
+        get name() {
+          return this._name;
+        }
+        set name(value) {
+          this._name = value;
+        }
+
+        //함수 생성
+        write() {
+          return `이름은 ${this.name}, 나이는 ${this.age} 살`;
+        }
+      }
+      //클래스 사용. 인스턴스(클래스로 만든 객체) 생성
+      let info = new Info({ name: "홍길원", age: 31 });
+      console.log(info.name);
+      console.log(info.privateValue);
+      console.log(info.publicValue);
+
+      //set
+      info.name = "홍길삼";
+      console.log(info.name);
+    </script>
+  </body>
+</html>
