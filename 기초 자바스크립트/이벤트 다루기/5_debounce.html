@@ -1,0 +1,34 @@
+<!--
+  이벤트 제어방법
+  1. Debounce
+  2.Throttle
+
+  이벤트 제어 이유
+  - 과도한 이벤트 발생 시 성능 저하
+  => 사용자 이용하지 않게 된다.
+
+  디바운스(debounce)
+  - 연속하여 발생한 이벤트를 그룹화
+  => 연속하여 발생한 이벤트 중 마지막 (또는 처음) 이벤트만 호출
+  
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" onkeyup="debounce()" />
+    <script>
+      var timer;
+      function debounce(event) {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+          console.log("Debounce :::" + timer);
+        }, 100);
+      }
+    </script>
+  </body>
+</html>

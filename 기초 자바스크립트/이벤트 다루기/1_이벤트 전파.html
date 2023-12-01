@@ -1,0 +1,60 @@
+<!--
+  이벤트 전파
+  - 이벤트 발새 ㅇ시 다른 곳으로 전파 시킴
+
+  예를들면 
+  div영역안에 span이 있고 또 그 안에 button이 있는 상황에서
+  button태그에서 이벤트가 발생하면 바깥으로 이벤트가 전파된다.
+
+  ->이러한 이벤트 전파를 중단하고 싶다면?
+
+  1. stopPropagation
+  - 이벤트 전파를 막는 함수
+  - 크롬, 사파리,파이어폭스에서만 사용 가능
+
+  2. cancelBubble
+  - 이벤트 전파를 막는 함수
+  - IE8에서는 속성 true로 해서 사용
+
+  -> 이벤트중단시키는 함수
+  1. preventDefault
+  - 이벤트 동작 중단 함수
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="divArea">
+      <span id="spanArea">
+        <button type="button" id="btn">클릭</button>
+      </span>
+    </div>
+    <script>
+      const divArea = document.getElementById("divArea");
+      const spanArea = document.getElementById("spanArea");
+      const btn = document.getElementById("btn");
+
+      divArea.addEventListener("click", fnDivArea);
+      spanArea.addEventListener("click", fnSpanArea);
+      btn.addEventListener("click", fnBtnArea);
+
+      function fnDivArea(event) {
+        event.stopPropagetion();
+        alert("div 영역!!!");
+      }
+      function fnSpanArea(e) {
+        event.stopPropagetion();
+        alert("span 클릭!!!");
+      }
+      function fnBtnArea(e) {
+        event.stopPropagetion();
+        alert("btn 클릭!!!");
+      }
+    </script>
+  </body>
+</html>

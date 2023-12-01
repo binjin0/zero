@@ -1,0 +1,37 @@
+<!--
+  이벤트 캡처링
+  - 이벤트 발생 시 가장 위 영역부터 탐색
+  
+  사용방법
+  -addEvnetListener에 capture를 true설정(원래 이벤트는 가장 아래 영역부터 탐색을 시작하는데 캡처링을 사용하려면 capture를 true로 바꿔야한다.)
+  -default 값은 false
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div_fisrt">
+      div_fisrt
+      <div class="div_second">
+        div_second
+        <div class="div_third">div_third</div>
+      </div>
+    </div>
+    <script>
+      const capts = document.querySelectorAll("div");
+
+      capts.forEach(function (div) {
+        div.addEventListener("click", fnCapture, {
+          capture: true,
+        });
+      });
+      function fnCapture(evnet) {
+        console.log(event.currentTarget.className);
+      }
+    </script>
+  </body>
+</html>
