@@ -1,0 +1,31 @@
+<!--
+  이벤트 등록
+  - 이벤트 핸들러를 통해 함수 등록
+  
+  이벤트 핸들러
+  - 이벤트를 다룬다 라는 뜻
+  - 이벤트 발생 시 실행되는 코드
+  - 이벤트를 JS에서 인식하여 사용하게 함
+  - =이벤트 리스너
+
+  이벤트 핸들러 표기법
+  on_이벤트명 (모두 소문자로 표기)
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" id="btnSave" onclick="fnSave();">저장</button>
+    <script>
+      function fnSave() {
+        alert("저장 되었습니다.");
+      }
+    </script>
+  </body>
+</html>

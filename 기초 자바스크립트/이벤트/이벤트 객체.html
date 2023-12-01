@@ -1,0 +1,27 @@
+<!--
+  이벤트 객체
+  - 이벤트가 일어나는 것 그 자체
+  - 이벤트의 기능 및 속성 제공
+  =>event
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" id="btn">클릭</button>
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", btnClickEvent);
+
+      function btnClickEvent(e) {
+        console.log(e);
+        console.log(e.target);
+        console.log(e.currentTarget);
+      }
+    </script>
+  </body>
+</html>
