@@ -1,0 +1,31 @@
+<!--
+  클로저(Closure)
+  - 함수와 함수가 선언된 어휘적 환경(렉시컬 환경)의 조합
+
+  => 내부함수가 외부함수 변수에 접근이 가능하다.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function makeFunc() {
+        var name = "Mozilla";
+        function displayName() {
+          //내부함수가 외부함수 name변수에 접근함.
+          alert(name);
+        }
+        return displayName;
+      }
+      var myFunc = makeFunc();
+      //myFunc변수에 displatName을 리턴함
+      myFunc();
+      //리턴된 displayName 함수를 실행(name 변수에 접근)
+    </script>
+  </body>
+</html>

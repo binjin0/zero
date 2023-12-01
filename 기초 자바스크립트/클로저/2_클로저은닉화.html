@@ -1,0 +1,34 @@
+<!--
+  은닉화
+  - Information Hiding
+  - 외부로부터 데이터를 감추는 것
+  - private으로 감춤
+  - 내부적으로 사용해야하는 경우 감춤
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function printFunc(name) {
+        this._browser = name;
+      }
+      printFunc.prototype.print = function () {
+        console.log(this._browser);
+      };
+      var browser1 = new printFunc("크롬");
+      var browser2 = new printFunc("웨일");
+
+      browser1.print();
+      browser2.print();
+
+      //크롬이 모질라로 바뀜. parivate으로 선언했는데도 너무 쉽게 접근 할 수 있음. =>해결하기 위해서 클로저 은직화 사용
+      broswer1._browser = "모질라";
+      broswer1.print();
+    </script>
+  </body>
+</html>
