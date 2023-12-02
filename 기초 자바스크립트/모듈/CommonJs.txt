@@ -1,0 +1,14 @@
+ CommonJS
+  - 공통 JS 모듈
+  - Node.js환경의 모듈 시스템
+  - module.exports와 require 이용
+  - 동기적으로 불러옴
+  - Back-End용으로 개발
+
+  CommonJS 사용방법
+  -export(내보내기)
+  변수나 내보내고자하는 객체 지정
+
+  -require(가져오기)
+  반환값 module.exports객체
+  
