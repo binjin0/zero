@@ -1,0 +1,32 @@
+
+  이벤트 루프?
+  - 틱(tick)동작을 함. 
+  Callback stack에서 실행된 함수는 webAPIS에서  호출해서 WebAPI는 처리해서 Callback Queue에 넣는다.
+  그리고  자바스크립트가 갖고 있는  Call Stack이 비어있는지 확인하고 비어있으면 넣는다. 그리고 Call Stack에 함수가 다 실행될때까지 이를 반복함.
+
+  자바스크립트는
+  -> 싱글스레드 기반언어
+  -> 한번에 한 개만 작업언어
+  인데도 불구하고 여러 작업이 동시처리되는걸 자주 볼 수 있다.
+  그 이유는 이벤트 루프때문이다.
+
+
+  이벤트루프 동작방식
+
+  javascript엔진은 Heap과 Call Stack으로 구성되어 있다.
+  Heap은
+  - 메모리 할당이 일어나는 공간
+  - 변수, 함수 선언 시 메모리 할당 일어남
+
+  Call Stack
+  - 코드 시행시 쌓임
+  - LIFO(나중에 들어온게 먼저 나간다.)
+
+  WebAPIs
+  - 브라우저에서 제공하는 API
+  - DOM, Ajax, 타이머 함수 등
+  - Callback 함수를 Callback Queue에 넣음
+
+  Callback Queue
+  - 비동기적으로 실행된 콜백 함수 있음 (ex Ajax나 타이머 함수 실행 완료 후 실행할 콜백가 볼관)
+  - FIFO(먼저 들어온것이 먼저나간다.)
