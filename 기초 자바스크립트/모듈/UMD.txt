@@ -1,0 +1,6 @@
+UMD
+- Universal Moudule Dfinition
+- 여러 모듈 시스템 동작 가능
+- AMD와 CommonJS를 통합하기 위한 것
+- AMD의 define 사용
+- CommonJS의 module.exports 사용

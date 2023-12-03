@@ -1,0 +1,13 @@
+AMD
+- Asynchronous Module Defifition
+- 비동기적 모듈 선언
+- Require.js
+- Front-End용으로 개발됨
+- define과 require 사용
+
+AMD 역사
+브라우저 멈춤 현상이 일어나면서 생긴 모듈
+
+define(내보내기)
+
+require(가져오기)
