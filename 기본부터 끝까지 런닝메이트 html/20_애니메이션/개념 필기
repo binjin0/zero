@@ -23,6 +23,7 @@ animation-delay
 음수값 사용 가능 -> 애니메이션이 바로 시작되지만 중간부터 시작된다.
 
 animation-timing-function
+중간 상태들의 전환을 어떤 시간간격으로 진행할 지 지정.
 5. animation-iteration-count, animation-direction
 animation-iteration-count
 :반복횟수 설정
@@ -30,7 +31,7 @@ animation-iteration-count
 
 - 속성값 종류
 숫자
-infinite
+infinite : 무한반복
 
 animation-direction
 : 애니메이션의 방향 설정
