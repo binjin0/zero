@@ -1,0 +1,10 @@
+1. Grid 개요
+grid 레이아웃
+flex와 다르게 이차원 레이아웃 시스템
+=>복잡한 레이아웃을 직관적으로 구축할 수 있음
+
+2. Container - display
+
+- grid
+
+- inline-grid
