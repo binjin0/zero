@@ -8,3 +8,10 @@ flex와 다르게 이차원 레이아웃 시스템
 - grid
 
 - inline-grid
+
+3. Container -grid-template-rows / Container - grid-template-columns
+Container -grid-template-rows
+몇개의 행을 갖게 될 건지 설정하는 css
+fr이라는 단위를 씀
+
+Container - grid-template-columns

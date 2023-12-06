@@ -1,0 +1,12 @@
+.container {
+  border: 5px dashed orange;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /*3개의 열을 나누는데 간격은 2:1:1로*/
+  grid-template-rows: 1fr 1fr; /*행을 2개로 나누는데 간격은 같게*/
+}
+
+.item {
+  background-color: paleturquoise;
+  border: 3px solid blue;
+  font-size: 30px;
+}
