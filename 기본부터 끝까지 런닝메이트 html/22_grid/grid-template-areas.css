@@ -1,0 +1,30 @@
+.container {
+  border: 5px dashed orange;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /*5칸을 동일한 크기로 나눈다.*/
+  grid-template-rows: repeat(3, 1fr); /*3칸을 동일한 크기로 나눈다.*/
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "ma ma . sb sb"
+    "fo fo fo fo fo";
+}
+
+.item {
+  background-color: paleturquoise;
+  border: 3px solid blue;
+  font-size: 24px;
+}
+.header {
+  grid-area: hd;
+}
+.main {
+  grid-area: ma;
+}
+.sidebar {
+  grid-area: sb;
+}
+.footer {
+  grid-area: fo;
+}
