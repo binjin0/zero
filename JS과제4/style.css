@@ -1,0 +1,77 @@
+:root {
+  --calendar-size: 600px;
+  --font-size: calc(var(--calendar-size) * 0.045);
+}
+.title {
+  text-align: center;
+  font-size: 70px;
+  color: rgb(220, 70, 70);
+  margin: 30px;
+}
+.calendar {
+  /* display: flex; */
+  width: var(--calendar-size);
+  height: 600px;
+  font-size: var(--font-size);
+  margin: 0 auto;
+  border-radius: 5%;
+  box-shadow: 0 16px 32px rgba(95, 91, 91, 0.5);
+}
+.calendar-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  background-color: #3eb86e;
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.calendar-nav button {
+  background: none;
+  border: none;
+  color: white;
+}
+.month-year {
+  font-size: var(--font-size);
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.calendar-grid {
+  padding: 15px;
+  text-align: center;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  color: #e2e0e2;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.days span {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border: none;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3bb96d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.days span.sunday {
+  color: red;
+  /* 여기에 원하는 스타일을 추가하세요 */
+}
