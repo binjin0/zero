@@ -2,16 +2,31 @@
   --calendar-size: 600px;
   --font-size: calc(var(--calendar-size) * 0.045);
 }
-.title {
-  text-align: center;
+.date-picker {
+  width: var(--calendar-size);
+  margin: 0 auto;
+}
+.date-picker .title {
   font-size: 70px;
   color: rgb(220, 70, 70);
   margin: 30px;
 }
+.select-data {
+  width: 300px;
+  height: 60px;
+  background-color: white;
+  border: solid 1px rgb(226, 224, 226);
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: gray;
+  font-size: var(--font-size);
+  text-align: left;
+  cursor: pointer;
+}
 .calendar {
-  /* display: flex; */
+  display: none;
   width: var(--calendar-size);
-  height: 600px;
+  height: 700px;
   font-size: var(--font-size);
   margin: 0 auto;
   border-radius: 5%;
@@ -19,7 +34,7 @@
 }
 .calendar-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 50px;
   align-items: center;
   background-color: #3eb86e;
@@ -32,6 +47,7 @@
   border: none;
   color: white;
 }
+
 .month-year {
   font-size: var(--font-size);
   color: white;
@@ -48,6 +64,8 @@
   grid-template-columns: repeat(7, 1fr);
   font-weight: bold;
   color: #e2e0e2;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .days {
   display: grid;
@@ -58,8 +76,15 @@
 .days span {
   display: block;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   border: none;
+}
+.days .prev-date,
+.days .next-date {
+  color: #e2e0e2;
+}
+.days span.sunday {
+  color: red;
 }
 .circle {
   width: 70px;
@@ -70,8 +95,4 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-.days span.sunday {
-  color: red;
-  /* 여기에 원하는 스타일을 추가하세요 */
 }
