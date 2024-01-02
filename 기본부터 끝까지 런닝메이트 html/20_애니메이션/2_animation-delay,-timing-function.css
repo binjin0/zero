@@ -1,0 +1,54 @@
+div {
+  width: 100px;
+  height: 100px;
+  border: 10px solid silver;
+  border-radius: 30px;
+}
+.box1 {
+  background-color: rgb(204, 253, 225);
+  /*infinite : 무한재생*/
+  -webkit-animation: my-first-animation 1s infinite;
+  animation: my-first-animation 1s infinite;
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.box2 {
+  background-color: rgb(255, 221, 198);
+  -webkit-animation: my-first-animation 1s infinite;
+  animation: my-first-animation 1s infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 0s;
+}
+.box3 {
+  background-color: rgb(186, 239, 255);
+  -webkit-animation: my-first-animation 1s infinite;
+  animation: my-first-animation 1s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes my-first-animation {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    width: 300px;
+    font-size: 80px;
+  }
+  100% {
+    font-weight: 20px;
+  }
+}
+
+@keyframes my-first-animation {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    width: 300px;
+    font-size: 80px;
+  }
+  100% {
+    font-weight: 20px;
+  }
+}

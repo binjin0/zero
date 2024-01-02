@@ -1,0 +1,52 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 10px solid seagreen;
+  background-color: rgb(204, 253, 225);
+  border-radius: 30px;
+  -webkit-animation: my-first-animation 5s infinite;
+  animation: my-first-animation 2s infinite;
+}
+
+@-webkit-keyframes my-first-animation {
+  /*변화를 두가지만 사용할때는 from~to 사용하기
+  from {
+    width: 100px;
+  }
+  to {
+    width: 300px;
+  }
+  */
+  /*3가지 이상 변화를 사용할 때는 %사용하기*/
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    font-weight: 20px;
+  }
+}
+
+@keyframes my-first-animation {
+  /*변화를 두가지만 사용할때는 from~to 사용하기
+  from {
+    width: 100px;
+  }
+  to {
+    width: 300px;
+  }
+  */
+  /*3가지 이상 변화를 사용할 때는 %사용하기*/
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    width: 300px;
+    font-size: 80px;
+  }
+  100% {
+    font-weight: 20px;
+  }
+}

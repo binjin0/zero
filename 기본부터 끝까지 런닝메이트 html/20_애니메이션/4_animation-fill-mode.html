@@ -12,7 +12,8 @@
       }
       .box {
         background-color: rgb(136, 233, 171);
-        animation-fill-mode: 3s linear;
+        animation: fill-mode 3s linear;
+        animation-fill-mode: forwards; /*기존스타일로 돌아오지않고 끝남*/
       }
       @keyframes fill-mode {
         0% {
