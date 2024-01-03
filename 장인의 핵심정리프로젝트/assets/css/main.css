@@ -1,0 +1,40 @@
+/*
+mixin
+
+*/
+.btn-1 {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  font-weight: bold;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-2 {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid lightgray;
+  border-radius: 14px;
+  font-weight: bold;
+  border: 1px solid blue;
+  color: blue;
+};
+}
+body #test {
+  color: #00498c;
+}��산됨
+1em=16px
+
+use : 다른 파일을 끌어다쓸때 사용
+scss파일을 불러오면 css도 같이 만들어짐. 이걸 막기 위해서는 파일이름 앞에 _를 붙여주면 된다. 
+*/
+.box {
+  width: 150px;
+  height: 100px;
+  border: 1px solid red;
+}5);
+}
