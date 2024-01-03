@@ -1,0 +1,22 @@
+.container {
+  height: 500px;
+  border: 5px dashed orange;
+  display: flex;
+  /*flow -> deration과 warp을 동시에 작성함*/
+  flex-flow: row-reverse wrap;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  background-color: paleturquoise;
+  border: 10px solid blue;
+  font-size: 30px;
+  /* flex-grow: 1; */
+}
+.item:nth-child(2) {
+  flex-grow: 2;
+}
+.item:nth-child(3) {
+  flex-grow: 1;
+}

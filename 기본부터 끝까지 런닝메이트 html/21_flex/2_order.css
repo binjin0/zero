@@ -1,0 +1,25 @@
+.container {
+  height: 200px;
+  border: 5px dashed orange;
+  display: flex;
+  /*flow -> deration과 warp을 동시에 작성함*/
+  flex-flow: row wrap;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: paleturquoise;
+  border: 5px solid blue;
+  font-size: 30px;
+}
+/*order은 item 속성. 즉 자식에게 적용하는 속성이다. 따라서 부모에 flex나 grid같은 것이 선언되어있어야한다.*/
+.item:nth-child(3) {
+  order: 1;
+}
+.item:nth-child(5) {
+  order: 8;
+}
+.item:nth-child(4) {
+  order: -100;
+}
