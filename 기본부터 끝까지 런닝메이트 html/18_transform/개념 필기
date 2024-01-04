@@ -34,7 +34,7 @@ translate(200px) == translate(200px,0) 이러하다.
 - angle자료형 사용
 skew(ax) : x축으로만 기울여진다.
 skew(ax, ay) : x축 y축 동시에 기울여진다.
-skewx() : x축만 기을임
+skewx() : x축만 기을임ㅠ 
 skewy() : y축만 기울임
 
 6. 기준점 - trasform-origin
