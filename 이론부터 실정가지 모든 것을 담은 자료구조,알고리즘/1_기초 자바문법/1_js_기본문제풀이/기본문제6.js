@@ -14,11 +14,13 @@ function answer(s, e) {
   sequence.push(s);
   sequence.push(e);
 
-  // 코드 구현 시작 영역
-
-  // …
-
-  // 코드 구현 종료 영역
+  let i = 0;
+  let num = 0;
+  while (num >= 0) {
+    num = sequence[i] - sequence[i + 1];
+    if (num > 0) sequence.push(num);
+    i++;
+  }
 
   return sequence;
 }
